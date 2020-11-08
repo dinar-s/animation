@@ -141,11 +141,39 @@ body {background-color: #101010;}
 } */
 /* ============================ btn 2 ============================== */
 
-
-
-
-
-
+/* ============================ btn 3 ============================== */
+.btn3 {
+    border-color: #2894ff;;
+    border-radius: 0;
+    color: #2894ff;;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+  }
+  .btn3:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #2894ff;
+    z-index: -1;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+  }
+  .btn3:hover {
+    color: #fff;
+  }
+  .btn3:hover:after {
+    width: 110%;
+  }
+/* ============================ btn 3 ============================== */
 
 
 
