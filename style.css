@@ -143,11 +143,11 @@ body {background-color: #101010;}
 
 /* ============================ btn 3 ============================== */
 .btn3 {
-    border-color: #2894ff;;
+    border-color: #2894ff;
     border-radius: 0;
-    color: #2894ff;;
-    position: relative;
+    color: #2894ff;
     overflow: hidden;
+    cursor: pointer;
     z-index: 1;
     -webkit-transition: color 150ms ease-in-out;
     transition: color 150ms ease-in-out;
@@ -174,6 +174,88 @@ body {background-color: #101010;}
     width: 110%;
   }
 /* ============================ btn 3 ============================== */
+
+
+/* ============================ btn 4 ============================== */
+.btn4{
+    border: 1px solid #2894ff;
+    padding: 15px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+.btn4:hover {
+    color: #fff;
+}
+.btn4:hover:after, .btn:active:after {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+.btn4:after {
+    width: 0%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #2894ff;
+}
+.btn4:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/* ============================ btn 4 ============================== */
+
+
+/* ============================ btn 5 ============================== */
+
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+
+.btn5 {
+  padding: 0.75em 2em;
+  text-align: center;
+  text-decoration: none;
+  color: #2194E0;;
+  border: 2px solid #2194E0;;
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.btn5:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+}
+.btn5:hover {
+    background-color: #2194E0;;
+    color: #fff;
+    border-bottom: 4px solid darken(#2194E0, 10%);
+}
+.btn5:hover::before {
+      transform: skewX(-45deg) translateX(13.5em);
+     transition: all 0.5s ease-in-out;
+}
+/* ============================ btn 5 ============================== */
 
 
 
